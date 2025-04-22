@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 {
+  color: #333;
+}
+/* Form Styles */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  align-items: center;
+  background: white;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #218838;
+}
+/* Student Records Styles */
+#studentRecords {
+  margin-top: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 10px;
+  box-shadow: 0 2px 10px rgb(51, 189, 69);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners are visible */
+}
+thead {
+  background-color: #28a745;
+  color: white;
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+td {
+  background-color: white;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+  input {
+    max-width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  form {
+    width: 80%;
+  }
+  input {
+    max-width: 80%;
+  }
+  button {
+    width: 80%;
+  }
+}
+@media (min-width: 901px) {
+  form {
+    width: 50%;
+  }
+  input {
+    max-width: 50%;
+  }
+  button {
+    width: auto;
+  }
+}
